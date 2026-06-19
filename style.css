@@ -1,1 +1,179 @@
+/* ====== RESET ====== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    overflow:hidden;
+    height:100vh;
+    background:linear-gradient(135deg,#0d1b4c,#174ea6,#5ea8ff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+/* ===== Fondo ===== */
+
+#background{
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at top,#7dc6ff55,transparent 40%),
+    radial-gradient(circle at bottom,#4d9dff33,transparent 40%);
+    z-index:-3;
+}
+
+/* ===== Corazones ===== */
+
+#hearts{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    z-index:-2;
+}
+
+/* ===== Contenedor ===== */
+
+.container{
+
+    width:90%;
+    max-width:700px;
+
+    text-align:center;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    border-radius:30px;
+
+    padding:60px 40px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+}
+
+/* ===== Animales ===== */
+
+.animals{
+
+    font-size:48px;
+
+    margin-bottom:25px;
+
+}
+
+/* ===== Titulo ===== */
+
+h1{
+
+    font-size:70px;
+
+    letter-spacing:8px;
+
+    margin-bottom:25px;
+
+    font-weight:700;
+
+}
+
+/* ===== Frases ===== */
+
+.phrase{
+
+    font-size:24px;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+.phrase2{
+
+    font-size:22px;
+
+    color:#d8ebff;
+
+    margin-bottom:40px;
+
+}
+
+/* ===== Botón ===== */
+
+button{
+
+    border:none;
+
+    background:white;
+
+    color:#174ea6;
+
+    padding:18px 45px;
+
+    border-radius:60px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+button:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* ===== Firma ===== */
+
+.signature{
+
+    margin-top:35px;
+
+    font-size:14px;
+
+    opacity:.7;
+
+}
+
+/* ===== Responsive ===== */
+
+@media(max-width:768px){
+
+h1{
+
+font-size:50px;
+
+}
+
+.phrase{
+
+font-size:20px;
+
+}
+
+.animals{
+
+font-size:40px;
+
+}
+
+.container{
+
+padding:40px 25px;
+
+}
+
+}
